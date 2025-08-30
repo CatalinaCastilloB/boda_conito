@@ -3,12 +3,12 @@ import { useSprings, animated, to as interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from './styles.module.css';
 const cards = [
-  './img/6.png',
-  './img/5.png',
-  './img/4.png',
-  './img/3.png',
-  './img/2.png',
-  './img/1.png',
+  'https://i.imgur.com/WYa1sHs.png',
+  'https://i.imgur.com/lTAFZXr.png',
+  'https://i.imgur.com/4k59YXf.png',
+  'https://i.imgur.com/YZCEWT2.png',
+  'https://i.imgur.com/ckQvFC4.png',
+  'https://i.imgur.com/HuUy5S5.png',
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
