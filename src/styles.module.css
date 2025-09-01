@@ -4,13 +4,13 @@
       auto;
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     justify-content: center;
-    padding: 1vh 3vw 13vh;
+    padding: 1vh 3vw 15vh;
     
   }
   .deck {
-    margin: 3vh 3vw;
+    margin: 2vh 3vw;
     padding: 1vh 1vw;
     position: absolute;
     width: 90%;

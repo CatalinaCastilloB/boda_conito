@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useSprings, animated, to as interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from './styles.module.css';
+import styled from "styled-components";
+
 const cards = [
   'https://i.imgur.com/WYa1sHs.png',
   'https://i.imgur.com/lTAFZXr.png',
@@ -71,13 +73,66 @@ function Deck() {
         </animated.div>
       ))}
     </>
+    
   )
 }
 
+const theme = {
+  blue: {
+    default: "rgb(97, 145, 171)",
+    hover: "rgb(54, 139, 185)",
+  },
+  
+};
+
+const Button = styled.button`
+  background-color: ${(props) => theme[props.theme].default};
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0; 
+  text-transform: uppercase;
+  margin: 0;
+  width: 33.33%;
+  height: 4vh;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgb(126,143,153);
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: ${(props) => theme[props.theme].hover};
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+`;
+
+Button.defaultProps = {
+  theme: "blue",
+};
+
+
+
+
+
 export default function App() {
   return (
+    <>
     <div className={styles.container}>
       <Deck />
     </div>
+    <div>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <Button>¡Confirma!</Button>
+      </a>
+      <a href="https://www.youtube.com/watch?v=y6120QOlsfU" target="_blank">
+        <Button>Lista novios</Button>
+      </a>
+      <a href="https://www.youtube.com/watch?v=mOYZaiDZ7BM" target="_blank">
+        <Button>¡Inspirate!</Button>
+      </a>
+      </div>
+    </>
   )
 }
