@@ -5,8 +5,10 @@ import styles from './styles.module.css';
 import styled from "styled-components";
 
 const cards = [
-  'https://i.imgur.com/WYa1sHs.png',
-  'https://i.imgur.com/lTAFZXr.png',
+  'https://i.imgur.com/6715APn.png',
+  'https://i.imgur.com/AByONvN.png',
+  'https://i.imgur.com/7dIzulV.png',
+  'https://i.imgur.com/bshZnbO.png',
   'https://i.imgur.com/4k59YXf.png',
   'https://i.imgur.com/YZCEWT2.png',
   'https://i.imgur.com/ckQvFC4.png',
@@ -88,14 +90,15 @@ const theme = {
 const Button = styled.button`
   background-color: ${(props) => theme[props.theme].default};
   color: white;
-  padding: 5px 15px;
+  padding: 1%;
   border-radius: 5px;
   outline: 0;
   border: 0; 
   text-transform: uppercase;
-  margin: 0;
-  width: 33.33%;
-  height: 4vh;
+  margin:  0.5vh 1.6vw;
+  margin-bottom: 5vh;
+  width: 30vw;
+  height: 6vh;
   cursor: pointer;
   box-shadow: 0px 2px 2px rgb(126,143,153);
   transition: ease background-color 250ms;
@@ -123,13 +126,13 @@ export default function App() {
       <Deck />
     </div>
     <div>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+    <a href="https://docs.google.com/forms/d/1vMbzBxcOZ1CT27leUADZGvrcUkwIn4pvTYC4YHMiOCU/edit" target="_blank">
         <Button>¡Confirma!</Button>
       </a>
-      <a href="https://www.youtube.com/watch?v=y6120QOlsfU" target="_blank">
+      <a href="https://novios.falabella.com/info-evento/evento?codigoEvento=2100147" target="_blank">
         <Button>Lista novios</Button>
       </a>
-      <a href="https://www.youtube.com/watch?v=mOYZaiDZ7BM" target="_blank">
+      <a href="https://pin.it/2VpCGd4bM" target="_blank">
         <Button>¡Inspirate!</Button>
       </a>
       </div>
